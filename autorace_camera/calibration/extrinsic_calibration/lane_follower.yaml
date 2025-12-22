@@ -1,0 +1,42 @@
+lane_follower:
+  ros__parameters:
+    pid_kp: 0.001      # Proportional gain - increase for faster response
+    pid_ki: 0.0001     # Integral gain - increase to eliminate steady-state error
+    pid_kd: 0.0005     # Derivative gain - increase to reduce overshoot
+
+    # Velocity settings
+    linear_velocity: 0.05      # Forward velocity in m/s
+    max_angular_velocity: 1.0  # Maximum steering angular velocity in rad/s
+
+    # Yellow lane (left) detection - HSV range
+    # Adjust these based on your specific lane color under different lighting
+    yellow_h_min: 15
+    yellow_h_max: 35
+    yellow_s_min: 100
+    yellow_s_max: 255
+    yellow_v_min: 100
+    yellow_v_max: 255
+
+    # White lane (right) detection - HSV range
+    white_h_min: 0
+    white_h_max: 180
+    white_s_min: 0
+    white_s_max: 30
+    white_v_min: 200
+    white_v_max: 255
+
+    # Image processing parameters
+    input_format: 'raw'    # 'raw' or 'compressed'
+    blur_kernel: 5         # Gaussian blur kernel size (must be odd)
+    canny_threshold1: 50   # Lower Canny threshold
+    canny_threshold2: 150  # Upper Canny threshold
+    hough_rho: 1           # Hough line distance resolution
+    hough_theta: 0.01745   # Hough line angle resolution (π/180)
+    hough_threshold: 30    # Minimum votes for line detection
+    hough_min_length: 30   # Minimum line length
+    hough_max_gap: 10      # Maximum gap between line segments
+
+    # Debugging
+    publish_debug_image: true
+    verbose_logging: false
+    is_calibrating: false

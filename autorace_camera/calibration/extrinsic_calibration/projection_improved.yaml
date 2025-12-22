@@ -1,0 +1,30 @@
+camera:
+  image_projection:
+    ros__parameters:
+      # Image dimensions
+      image_width: 848
+      image_height: 480
+      image_center_x: 424
+      image_center_y: 240
+
+      # Source trapezoid points (in original image frame)
+      # Defines which part of the image gets transformed
+      top_x: 72      # Width of trapezoid at top (closer to camera)
+      top_y: 4       # Height of top edge from center
+      bottom_x: 115  # Width of trapezoid at bottom (farther from camera)
+      bottom_y: 120  # Height of bottom edge from center
+
+      # Destination rectangle points (in output bird's eye view)
+      output_top: 0
+      output_bottom: 480
+      output_left: 148
+      output_right: 600
+
+      # Processing flags
+      is_calibrating: false
+      enable_blur: true
+      blur_kernel: 5
+
+      # Image format settings
+      input_format: 'raw'    # 'raw' or 'compressed'
+      output_format: 'raw'   # 'raw' or 'compressed'
