@@ -6,7 +6,9 @@ cd ros2_ws/src
 
 git clone https://github.com/Nek1tt/ROS_autorace_competition_2025.git
 
-colcon build
+cd ..
+
+colcon build --packages-select autorace_camera autorace_core_ROSchupepiki
 
 source install/setup.bash
 
