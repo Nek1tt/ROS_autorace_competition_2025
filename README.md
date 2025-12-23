@@ -3,6 +3,7 @@
 Установка:
 
 cd ros2_ws/src
+
 git clone https://github.com/Nek1tt/ROS_autorace_competition_2025.git
 
 colcon build
