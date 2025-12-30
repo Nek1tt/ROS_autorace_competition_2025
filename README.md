@@ -1,6 +1,6 @@
 # AutoRace ROS Competition 2025
 
-Решение команды **ROSchupepiki** для соревнования AutoRace 2025 на базе ROS 2 Humble и Gazebo Harmonic.
+Решение команды **ROSchupepiki** для соревнования AutoRace 2025 на базе ROS 2 Humble и Gazebo Harmonic. Робот проехал трассу на максимальный балл за 101.065 секунд.
 
 ## 👥 Команда разработки
 
