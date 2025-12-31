@@ -221,7 +221,7 @@ ros2 topic echo /is_green
 
 ## 📝 Лицензия
 
-Apache License 2.0
+MIT лицензия
 
 ## 📧 Контакты
 
